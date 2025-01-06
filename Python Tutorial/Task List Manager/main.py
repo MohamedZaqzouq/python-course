@@ -66,7 +66,10 @@ def main():
 
         if choice == "1":
             task = input("Enter the task to add: ")
-            add_task(task, task_list)
+            if task =="":
+                print("Task cannot be empty")
+            else:
+              add_task(task, task_list)
         elif choice == "2":
             task = input("Enter the task to remove: ")
             remove_task(task, task_list)
